@@ -16,8 +16,8 @@ export class TodoComponent {
   newTodoInput: string = ''
 
   // adding Todo
-  addTodo(){
-    if(this.newTodoInput.trim()){
+  addTodo() {
+    if (this.newTodoInput.trim()) {
       const newTodo: Todo = {
         title: this.newTodoInput,
         completed: false
@@ -28,13 +28,12 @@ export class TodoComponent {
   }
 
   //deleting Todo
-  deleteTodo(index : number){
+  deleteTodo(index: number) {
     this.todos.splice(index, 1)
   }
 
   //toggle Todo
-  toggleStatus(index: number){
-    this.todos = this.todos.map((todo, i) => i === index ? {...todo, completed: !todo.completed} : todo)
+  toggleStatus(index: number) {
+    this.todos = this.todos.map((todo, i) => i === index ? { ...todo, completed: !todo.completed } : todo)
   }
 }
-
