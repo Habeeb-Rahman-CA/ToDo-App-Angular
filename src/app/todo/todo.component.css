@@ -1,0 +1,102 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: rgba(80, 1, 68, 0.2) 0px 7px 29px 0px;
+    width: 400px;
+    padding: 20px;
+}
+
+.card h1{
+    color: #412c50;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+.card .inputField{
+    display: flex;
+}
+
+.inputField input{
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 12px 0 0 12px;
+    background-color: #e2caf3;
+    color: #412c50;
+    font-weight: 600;
+}
+
+::placeholder{
+    color: #412c5052;
+}
+
+.inputField .addBtn{
+    font-size: 18px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 0 12px 12px 0;
+    background-color: #e2caf3;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #412c50;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.inputField .addBtn:hover{
+    background-color: #dfb9fa;
+}
+ul{
+    list-style: none;
+    width: 360px;
+    padding:0;
+}
+li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #412c50;
+    font-weight: 600;
+    background-color: #e2caf3;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.listBtn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.listBtn button{
+    color: #412c50;
+    background-color: #e2caf3;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.listBtn button:hover{
+    color: #9860c0;
+}
+
+i{
+    font-size: 18px;
+}
+
+.divider{
+    background-color: #412c50;
+    height: 2px;
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 12px;
+}
